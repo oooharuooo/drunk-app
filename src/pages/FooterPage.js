@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Footer = () => {
+const FooterPage = () => {
     return (
         <div>
             <p>Copyright @ Dat V Thong</p>
@@ -8,4 +8,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default FooterPage;
