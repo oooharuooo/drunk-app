@@ -1,6 +1,8 @@
 import React from "react";
 
+import NumberCount from "../animation/NumberCount";
 import Fun from "../animation/Fun";
+
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
@@ -9,6 +11,7 @@ import { Button } from "@material-ui/core/";
 const MainPage = () => {
 	return (
 		<Main>
+			<NumberCount />
 			<Fun />
 			<Button variant="contained">
 				<Link to="/game">Play</Link>
