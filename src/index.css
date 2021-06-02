@@ -5,6 +5,10 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 }
+
+body {
+	font-family: "Roboto";
+}
 ul {
 	list-style-type: none;
 }

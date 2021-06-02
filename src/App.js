@@ -1,8 +1,8 @@
 import React from "react";
 
-import HomePage from "./pages/HomePage";
-import FooterPage from "./pages/FooterPage";
 import MainPage from "./pages/MainPage";
+import FooterPage from "./pages/FooterPage";
+import GamePage from "./pages/GamePage";
 import AboutPage from "./pages/AboutPage";
 import NavBar from "./components/NavBar";
 import Choices from "./data/Choices";
@@ -21,11 +21,14 @@ const App = () => {
 			<Container>
 				<NavBar />
 				<Switch>
-					<Route path="/about">
+					<Route exact path="/">
+						<MainPage />
+					</Route>
+					<Route exact path="/about">
 						<AboutPage />
 					</Route>
-					<Route path="/">
-						<HomePage />
+					<Route exact path="/game">
+						<GamePage />
 					</Route>
 				</Switch>
 				<FooterPage />
@@ -39,5 +42,5 @@ export default App;
 const Container = styled.div`
 	height: 100vh;
 	display: grid;
-	grid-template-rows: 100px auto 50px;
+	grid-template-rows: 100px auto 20px;
 `;
