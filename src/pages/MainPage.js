@@ -1,17 +1,15 @@
 import React from "react";
 
+import Fun from "../animation/Fun";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import having_fun from "../images/having_fun.svg";
 
 import { Button } from "@material-ui/core/";
 
 const MainPage = () => {
 	return (
 		<Main>
-			<div>
-				<img src={having_fun} alt="people are having fun" />
-			</div>
+			<Fun />
 			<Button variant="contained">
 				<Link to="/game">Play</Link>
 			</Button>
@@ -22,16 +20,21 @@ const MainPage = () => {
 export default MainPage;
 
 const Main = styled.main`
-	img {
-		width: 100%;
-		height: auto;
-	}
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 
 	padding: 0.2rem 1rem;
 
+	.having-fun {
+		svg {
+			width: 100%;
+			height: auto;
+		}
+	}
+	#girl-1 {
+		background-color: red;
+	}
 	button {
 		max-width: fit-content;
 		background-color: #778eb5;
