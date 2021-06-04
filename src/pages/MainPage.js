@@ -13,9 +13,9 @@ const MainPage = () => {
 		<Main>
 			<NumberCount />
 			<Fun />
-			<Button variant="contained">
-				<Link to="/game">Play</Link>
-			</Button>
+			<Link to="/game">
+				<Button variant="contained">Play</Button>
+			</Link>
 		</Main>
 	);
 };
@@ -38,13 +38,13 @@ const Main = styled.main`
 	#girl-1 {
 		background-color: red;
 	}
-	button {
-		max-width: fit-content;
-		background-color: #778eb5;
+	a {
 		place-self: center;
-		font-size: 2.5rem;
-		a {
+		button {
 			color: white;
+			max-width: fit-content;
+			background-color: #778eb5;
+			font-size: 2rem;
 		}
 	}
 `;

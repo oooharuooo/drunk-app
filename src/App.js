@@ -6,6 +6,7 @@ import GamePage from "./pages/GamePage";
 import AboutPage from "./pages/AboutPage";
 import NavBar from "./components/NavBar";
 import Choices from "./data/Choices";
+import Beer from "./animation/Beer";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import styled from "styled-components";
@@ -24,6 +25,7 @@ const App = () => {
 					<Route exact path="/">
 						<MainPage />
 					</Route>
+					<Route exact path="/"></Route>
 					<Route exact path="/about">
 						<AboutPage />
 					</Route>

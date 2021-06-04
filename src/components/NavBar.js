@@ -1,6 +1,5 @@
 import React from "react";
 
-import Beer from "../images/Beer.svg";
 import VietnamFlag from "../images/vietnam.svg";
 import USFlag from "../images/united-states.svg";
 
@@ -12,9 +11,9 @@ const NavBar = () => {
 		<Nav className="navbar">
 			<ul className="navbar-container">
 				<li className="navbar-logo">
-					<Link to="/">
-						<img src={Beer} alt="beer" />
-					</Link>
+					{/* <Link to="/">
+						<Beer />
+					</Link> */}
 				</li>
 
 				<li className="navbar-links">
